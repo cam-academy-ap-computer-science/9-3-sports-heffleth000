@@ -10,9 +10,11 @@ public class SportsMain {
 		System.out.println(Joe2.equals(Joe1));
 		
 		Player[] players = new Player[5];
-		players.addRoster(1, Joe1);
+		//players.addRoster(1, Joe1);
 		
 		Sports roster = new Sports(players, 5);
+		roster.addRoster(1, Joe1);
+
 				
 	}
 

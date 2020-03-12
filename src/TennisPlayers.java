@@ -1,19 +1,18 @@
 
-public class TennisPlayers{
-	private String name;
+public class TennisPlayers extends Player{
 	private int careerWins;
 	private int careerLosses;
 	private int careerAces;
 	
 	public TennisPlayers (String name, int cw, int cl, int ca) {
-		this.name = name;
+		super(name);
 		careerWins = cw;
 		careerLosses = cl;
 		careerAces = ca;
 	}
 	
 	public String getName() {
-		return name;
+		return super.getName();
 	}
 	
 	public int getWins() {
@@ -29,13 +28,13 @@ public class TennisPlayers{
 	}
 	
 	public String TennisPlayertoString() {
-		return "Name: " + name +  "Career Wins: " + careerWins + " Career Losses: " + careerLosses + " Career Aces: " + careerAces;
+		return "Name: " + super.getName() +  "Career Wins: " + careerWins + " Career Losses: " + careerLosses + " Career Aces: " + careerAces;
 	}
 	
 	public boolean equals(Object o) {
 		if (o instanceof TennisPlayers) {
 			TennisPlayers other = (TennisPlayers) o;
-			return (other.getName() == name) && (other.getWins() == careerWins) && (other.getLosses() == careerLosses) && (other.getAces() == careerAces);
+			return (other.getName() == super.getName()) && (other.getWins() == careerWins) && (other.getLosses() == careerLosses) && (other.getAces() == careerAces);
 		} else {
 			return false;
 		}

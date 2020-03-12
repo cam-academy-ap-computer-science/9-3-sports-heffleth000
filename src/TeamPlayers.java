@@ -1,17 +1,16 @@
 
-public class TeamPlayers {
-	private String name;
+public class TeamPlayers extends Player{
 	private int number;
 	private String team;
 	
 	public TeamPlayers (String name, int number, String team) {
-		this.name = name;
+		super(name);
 		this.number = number;
 		this.team = team;
 	}
 	
 	public String getName() {
-		return name;
+		return super.getName();
 	}
 	
 	public int getNumber() {
@@ -23,13 +22,13 @@ public class TeamPlayers {
 	}
 	
 	public String TeamPlayertoString() {
-		return "Name: " + name + " Number: " + number + " Team: " + team;
+		return "Name: " + super.getName() + " Number: " + number + " Team: " + team;
 	}
 	
 	public boolean equals(Object o) {
 		if (o instanceof TeamPlayers) {
 			TeamPlayers other = (TeamPlayers) o;
-			return (other.getName() == name) && (other.getNumber() == number) && (other.getTeam() == team);
+			return (other.getName() == super.getName()) && (other.getNumber() == number) && (other.getTeam() == team);
 		} else {
 			return false;
 		}

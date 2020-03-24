@@ -27,8 +27,8 @@ public class TennisPlayers extends Player{
 		return careerAces;
 	}
 	
-	public String TennisPlayertoString() {
-		return "Name: " + super.getName() +  "Career Wins: " + careerWins + " Career Losses: " + careerLosses + " Career Aces: " + careerAces;
+	public String toString() {
+		return "Name: " + super.getName() +  " Career Wins: " + careerWins + " Career Losses: " + careerLosses + " Career Aces: " + careerAces;
 	}
 	
 	public boolean equals(Object o) {

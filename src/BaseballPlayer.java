@@ -34,7 +34,7 @@ public class BaseballPlayer extends TeamPlayers{
 		return rbi;
 	}
 	
-	public String BaseballPlayertoString() {
+	public String toString() {
 		return "Name: " + getName() + " Number: " + getNumber() + " Team: " + getTeam() + " Batting Average: " + battingAverage + " Homeruns: " + homeruns + " RBI: " + rbi;
 	}
 	

@@ -35,7 +35,7 @@ public class BasketballPlayer extends TeamPlayers{
 		return apg;
 	}
 	
-	public String BasketballPlayertoString() {
+	public String toString() {
 		return "Name: " + getName() + " Number: " + getNumber() + " Team: " + getTeam() + " PPG: " + ppg + " RPG: " + rpg + " APG: " + apg;
 	}
 	

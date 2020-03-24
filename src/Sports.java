@@ -7,9 +7,8 @@ public class Sports {
 		roster = new Player[maxNum];
 	}
 	
-	public Player[] addRoster(int num, Player P) {
-		roster[num - 1] = P;
-		return roster;
+	public void addRoster(Player[] newPlayers) {
+		roster = newPlayers;
 	}
 	
 }
